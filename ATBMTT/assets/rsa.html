@@ -1,0 +1,19 @@
+<p style="text-align: center;"><strong>Hệ MÃ RSA</strong></p>
+<p><strong>* Tạo khóa</strong></p>
+<p style="text-align: justify;">
+<u>B1:</u> Chọn 2 số nguyên tố lớn p ≠ q <br/>
+<u>B2:</u> Tính n = p * q =&gt; Φ(n) = (p-1)(q-1)<br/>
+<u>B3:</u> Chọn số nguyên e thỏa mãn thỏa mãn: 1&lt;e&lt;Φ(n) và
+UCLN(e, Φ(n))  = 1 <br/>
+<u>B4:</u> Tính d = e<sup>-1</sup> mod Φ(n)<br/>
+<u>B5:</u> Công bố khóa công khai: (n, e), khóa bí mật là d.<br/>
+</p>
+<p><strong>* Mã hóa:</strong></p>
+<p "style="text-align: justify;">
+Giả sử A gửi tin cho B, Quá trình mã hóa:<br/>
+<u>B1:</u> A lấy khóa công khai của B<br/>
+<u>B2:</u> A chuyển thông tin cần gửi X sang dạng số x (x Є Zn, 0≤x≤n-1)<br/>
+<u>B3:</u> Tính y = x<sup>e</sup> mod n<br/>
+<u>B4:</u> Gửi y cho B<br/>
+</p>
+<p><strong>* Giải mã</strong>:  x = y<sup>d</sup> mod n</p>

@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>ATBMTT</title>
+</head>
+<body>
+	<header style="margin-left: 10px;">
+		<h1>Hệ mã Balo</h1>
+	</header>
+	<div id="content" style="margin-left: 10px;">
+		<div class="part">
+			<h3>Tạo khóa:</h3>
+			<p>Chọn 1 dãy siêu tăng S. Dãy S được gọi là siêu tăng nếu nó thỏa mãn điều kiện: S<sub>i</sub> > ∑ S<sub>j</sub> (S<sub>i</sub> > 2*S<sub>i-1</sub>)</p>
+			<p>Chọn 1 số nguyên p thỏa mãn: p> ∑ S<sub>i</sub> (p > 2*S<sub>n</sub>)</p>
+			<p>Chịn 1 số nguyên a thỏa mãn:</p>
+			<pre>	1 < a < p-1
+	UCLN(a,p) =1
+			</pre>
+			<p>Tính dãy t: t<sub>i</sub>= a*S<sub>i</sub> mod p</p>
+			<p>=> Khóa công khai là dãy t</p>
+			<p>Khóa bí mật là: a, p và dãy S</p>
+		</div><!--.part -->
+		
+		<div class="part">
+			<h3>Mã hóa:</h3>
+			<p>Chọn bản rõ x là 1 dãy nhị phân</p>
+			<p>Tính y= ∑ x<sub>i</sub>* t<sub>i</sub></p>
+			<p>=> Gửi bản mã y</p>
+		</div>
+		<div class="part">
+			<h3>Giải mã:</h3>
+			<p>Tính C = a<sup>-1</sup>*y mod p</p>
+			<p>Giải bài toán Balo với số nguyên C và dãy siêu tăng S để tìm ra đáp án.</p>
+		</div>
+	</div><!-- #content -->
+</body>
+</html>

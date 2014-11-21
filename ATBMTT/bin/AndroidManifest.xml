@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="nguyenvanquan7826.com"
+    android:versionCode="12"
+    android:versionName="1.1" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="21" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/atbmtt"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".main.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".base.PhanTuNghichDaoActivity"
+            android:label="@string/title_activity_phan_tu_nghich_dao" >
+        </activity>
+        <activity
+            android:name=".base.AxmodnActivity"
+            android:label="@string/title_activity_axmodn" >
+        </activity>
+        <activity
+            android:name=".mahoacongkhai.RSAActivity"
+            android:label="@string/title_activity_creat_key_rsa" >
+        </activity>
+        <activity
+            android:name=".mahoacodien.MaVongActivity"
+            android:label="@string/title_activity_ma_vong" >
+        </activity>
+        <activity
+            android:name=".base.CalActivity"
+            android:label="@string/title_activity_cal" >
+        </activity>
+        <activity
+            android:name=".mahoacodien.HoanViActivity"
+            android:label="@string/title_activity_hoan_vi" >
+        </activity>
+        <activity
+            android:name=".mahoacodien.AffineActivity"
+            android:label="@string/title_activity_affine" >
+        </activity>
+        <activity
+            android:name=".mahoacodien.MaTuSinhActyvity"
+            android:label="@string/title_activity_ma_tu_sinh_actyvity" >
+        </activity>
+        <activity
+            android:name=".mahoacodien.VigenereActivity"
+            android:label="@string/title_activity_vigenere" >
+        </activity>
+        <activity
+            android:name=".mahoacodien.HillActivity"
+            android:label="@string/title_activity_hill" >
+        </activity>
+        <activity
+            android:name="nguyenvanquan7826.com.base.BangChuCaiActivity"
+            android:label="@string/title_activity_bang_chu_cai" >
+        </activity>
+    </application>
+
+</manifest>

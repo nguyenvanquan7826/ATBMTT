@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="black">#000</color>
+    <color name="blue">#0084D4</color>
+    <color name="red">#f00</color>
+    <color name="white">#fff</color>
+    <color name="xam">#DEDEDE</color>
+    <color name="xam_dam">#B4B4B4</color>
+    <color name="yellow">#FFFF00</color>
+    <color name="today">#4B8EFA</color>
+    <color name="yellow1">#FFFF66</color>
+    <color name="color_text_button">#fff</color>
+    <color name="color_text_result">#0084D4</color>
+
+</resources>

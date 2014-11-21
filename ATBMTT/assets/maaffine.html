@@ -1,0 +1,25 @@
+
+	<header style="margin-left: 10px;">
+		<h3 style="text-align: center;">MÃ AFFINE</h3>
+	</header>
+		
+	<p><strong>* Mã hóa</strong></p>
+	<p>y= e<sub>k</sub>(x)= (a*x + b) mod n</p>
+	
+	<p><strong>* Giải mã</strong></p>
+	<p>x= d<sub>k</sub>(y)= a<sup>-1</sup>(y-b) mod n</p>
+	<p style="text-align: justify;"><strong>* Điều kiện chọn khóa</strong></br>
+		+ a, b Є Zn </br>
+		+ UCLN(a, n) = 1</br></br>
+
+		<strong>Số cách chọn khóa</strong> = số cách chọn a * số cách chọn b</br>
+		+ Số cách chọn b: n cách</br>
+		+ Số cách chọn a: Φ(n) - số các số nguyên tố cùng nhau với n và nhỏ hơn n</br></br>
+
+		<strong>Tính chất của Φ(n)</strong></br>
+		+ Nếu n là số nguyên tố thì Φ(n) = n -1</br>
+		+ Nếu p và q là 2 số nguyên tố thì Φ(p*q) = Φ(p) * Φ(q)</br>
+		VD: 26 = 2*13 => Φ(26) = Φ(2)*Φ(13) = 1*12 = 12</br>
+		+ Nếu p là 1 số nguyên tố thì Φ(p<sup>r</sup>) = (p-1)*(p<sup>r-1</sup>)</br>
+		+ VD: 60 = 2<sup>2</sup>.3.5 => Φ(60) = Φ(2<sup>2</sup>).Φ(3).Φ(5) = 1.2<sup>1</sup>.2.4 = 16</br>
+	</p>

@@ -1,0 +1,32 @@
+<header style="margin-left: 10px;">
+	<h3 style="text-align: center;">PHẦN TỬ NGHỊCH ĐẢO</h3>
+</header>
+<p style="text-align: justify;">
+- Số nguyên tố: là số tự nhiên chỉ có 2 ước là 1 và chính nó.</br>
+- Hai số nguyên tố cùng nhau: là 2 số tự nhiên có UCLN = 1.</br>
+- Đồng dư: Có 2 số nguyên a, b. M là số nguyên dương khi đó a ≡ b mod m khi và chỉ khi a mod m = b mod m.</br>
+
+<p><strong>Phần tử nghịch đảo trong không gian Zn</strong></p>
+<p style="text-align: justify;">
++ Giả sử a Є Zn, Khi đó phần tử nghịch đảo của a là a<sup>-1</sup> Є Zn sao cho a.a<sup>-1</sup> đồng dư với 1 theo modun n.
++ Điều kiện để tồn tại a<sup>-1</sup> trong Zn là UCLN(a, n) = 1.</br>
++ T/c: Nếu b = a<sup>-1</sup> thì a = b<sup>-1</sup></br>
+<strong>Mẹo:</strong> Để kiểm tra a có là nghịch đảo của b hay không chỉ cần lấy a*b mod n. Nếu = 1 thì đúng, nếu khác 1 thì sai</br>
+</p>
+
+<p><strong>Cách tính a<sup>-1</sup> trong Zn</strong></p>
+<p style="text-align: justify;">
+VD: Tính 17<sup>-1</sup> trong Z<sub>26</sub></br>
+<img style="text-align: center;" src="nghichdao.png"/></br>
+- B1: Lập bảng gồm 3 cột a, v, y.</br>
+- B2: Tại 2 dòng đầu tiên điền cột a lần lượt là z và a, điền cột v là 0 và 1, y chưa điền gì.</br>
+- B3: Tính y (bắt đầu từ dòng 2) bằng cách lấy a tại dòng trên chia dòng dưới lấy phần nguyên.</br>
+- B4: Tính a bằng cách lấy a tại dòng trên chia dòng dưới lấy phần dư.</br>
+- B5: Tính v bằng cách lấy v tại dòng trên trừ (v dòng dưới nhân y).</br>
+- Lặp lại B3 đến khi nào a = 0.</br>
+- Nếu trước đó a = 1</br>
+&nbsp;&nbsp;&nbsp;&nbsp;+ Nếu v > 0 => a<sup>-1</sup> = v</br>
+&nbsp;&nbsp;&nbsp;&nbsp;+ Nếu v < 0 => a<sup>-1</sup> = n + v</br>
+- Nếu trước đó a != 1 thì không tồn tại a<sup>-1</sup></br>
+<strong>TH trên 17<sup>-1</sup> = 26 + (-3) = 23</strong>
+</p>

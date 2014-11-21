@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>ATBMTT</title>
+</head>
+<body>
+	<header style="margin-left: 10px;">
+		<h1 style="font-family:Georgia; color:blue;">Hệ mã Elgamal</h1>
+	</header>
+	<div id="content" style="margin-left: 10px;">
+		<div class="part">
+			<h3>Tạo khóa</h3>
+			<p>Chọn 1 số nguyên tố p bất kì</p>
+			<p>Chọn &alpha; ∈ Z <sup>*</sup>p (&alpha; gọi là phần tử nguyên thủy, thường chọn &alpha; =2) </p>
+			<p>Chọn 1 số nguyên a thỏa mãn: 0 ≤ a ≤ p-2 (a ∈ Z <sub>p-1</sub> )</p>
+			<p>Tính &beta; = &alpha;<sup>a</sup> mod p</p>
+			<p>Khóa công khai: (&alpha;, &beta; p)</p>
+			<p>Khóa bí mật: a</p>
+		</div><!-- #part -->
+		
+		<div class="part">
+			<h3>Mã hóa</h3>
+			<p>Chọn x và 1 số k bất kì, bí mật (k ∈ Z<sub>p-1</sub>)</p>
+			<p>Mã hóa: e<sub>k</sub>(x)=(y<sub>1</sub>, y<sub>2</sub>) trong đó:</p>
+			<p>y<sub>1</sub> = &alpha;<sup>k</sup> mod p</p>
+			<p>y<sub>2</sub> = x *&beta;<sup>k</sup> mod p</p>
+			<p>=> Gửi y<sub>1</sub>, y<sub>2</sub></p>
+		</div><!-- #part -->
+		
+		<div class="part">
+			<h3>Giải mã</h3>
+			<p>x = d<sub>k</sub>(y<sub>1</sub>, y<sub>2</sub>)= y<sub>2</sub>*(y<sub>1</sub><sup>a</sup>)<sup>-1</sup> mod p</p>
+		</div><!-- #part -->
+	</div><!-- #content -->
+</body>
+</html>
